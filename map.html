@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_4d4f13d5fb124625aa79486c701aef1b {
+                position : relative;
+                width : 750.0px;
+                height: 500.0px;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4d4f13d5fb124625aa79486c701aef1b" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_4d4f13d5fb124625aa79486c701aef1b = L.map(
+                                  'map_4d4f13d5fb124625aa79486c701aef1b',
+                                  {center: [-33.817458,151.004526],
+                                  zoom: 20,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_2d05d45f6019409ebbd6b5200326010a = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_4d4f13d5fb124625aa79486c701aef1b);
+        
+    
+
+            var marker_9c58a484611c4bc1adc2e34909b0f738 = L.marker(
+                [-33.81766128540039,151.0048065185547],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_4d4f13d5fb124625aa79486c701aef1b);
+            
+    
+
+                var icon_e7a6c54e747144d6a7ad7235923ccd8f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9c58a484611c4bc1adc2e34909b0f738.setIcon(icon_e7a6c54e747144d6a7ad7235923ccd8f);
+            
+    
+            var popup_46fee8f047ae4232b482b39374b41c5a = L.popup({maxWidth: '300'});
+
+            
+                var html_3bd8a9ded9fe4246974d3d7a793953a3 = $('<div id="html_3bd8a9ded9fe4246974d3d7a793953a3" style="width: 100.0%; height: 100.0%;">Bus M91 stayed in Parramatta for 82 seconds</div>')[0];
+                popup_46fee8f047ae4232b482b39374b41c5a.setContent(html_3bd8a9ded9fe4246974d3d7a793953a3);
+            
+
+            marker_9c58a484611c4bc1adc2e34909b0f738.bindPopup(popup_46fee8f047ae4232b482b39374b41c5a);
+
+            
+        
+    
+
+            var marker_4eebc61d82e045f09aa9724a8eefebb2 = L.marker(
+                [-33.81729507446289,151.00433349609375],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_4d4f13d5fb124625aa79486c701aef1b);
+            
+    
+
+                var icon_3214d59f4301472b8d64b8e93efc4b57 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4eebc61d82e045f09aa9724a8eefebb2.setIcon(icon_3214d59f4301472b8d64b8e93efc4b57);
+            
+    
+            var popup_69e35bcfbb4242b2a3d31c34fac5a09c = L.popup({maxWidth: '300'});
+
+            
+                var html_0ce817223d114e3c886a1db161999f49 = $('<div id="html_0ce817223d114e3c886a1db161999f49" style="width: 100.0%; height: 100.0%;">Bus 609 stayed in Parramatta for 50 seconds</div>')[0];
+                popup_69e35bcfbb4242b2a3d31c34fac5a09c.setContent(html_0ce817223d114e3c886a1db161999f49);
+            
+
+            marker_4eebc61d82e045f09aa9724a8eefebb2.bindPopup(popup_69e35bcfbb4242b2a3d31c34fac5a09c);
+
+            
+        
+    
+
+            var marker_42dfca5b8990481b959dda480aacc3cc = L.marker(
+                [-33.817134857177734,151.004150390625],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_4d4f13d5fb124625aa79486c701aef1b);
+            
+    
+
+                var icon_d5cf5260b8cc48e8aa212cb70c067018 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_42dfca5b8990481b959dda480aacc3cc.setIcon(icon_d5cf5260b8cc48e8aa212cb70c067018);
+            
+    
+            var popup_ad64d3730eeb414f830435acf6f07cee = L.popup({maxWidth: '300'});
+
+            
+                var html_5eb27de38d9d4c19b7b8ac273b18ff85 = $('<div id="html_5eb27de38d9d4c19b7b8ac273b18ff85" style="width: 100.0%; height: 100.0%;">Bus M92 stayed in Parramatta for 50 seconds</div>')[0];
+                popup_ad64d3730eeb414f830435acf6f07cee.setContent(html_5eb27de38d9d4c19b7b8ac273b18ff85);
+            
+
+            marker_42dfca5b8990481b959dda480aacc3cc.bindPopup(popup_ad64d3730eeb414f830435acf6f07cee);
+
+            
+        
+    
+
+            var marker_d46d9f916de54eb0b029399502902f95 = L.marker(
+                [-33.81801986694336,151.0054168701172],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_4d4f13d5fb124625aa79486c701aef1b);
+            
+    
+
+                var icon_c8c2e18d48b44671ad15f160531fa0ac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d46d9f916de54eb0b029399502902f95.setIcon(icon_c8c2e18d48b44671ad15f160531fa0ac);
+            
+    
+            var popup_2ddcffe2ea0a422289823b4f41fa631e = L.popup({maxWidth: '300'});
+
+            
+                var html_53e173a829c948439a30c1a3107e991c = $('<div id="html_53e173a829c948439a30c1a3107e991c" style="width: 100.0%; height: 100.0%;">Bus T65 stayed in Parramatta for 0 seconds</div>')[0];
+                popup_2ddcffe2ea0a422289823b4f41fa631e.setContent(html_53e173a829c948439a30c1a3107e991c);
+            
+
+            marker_d46d9f916de54eb0b029399502902f95.bindPopup(popup_2ddcffe2ea0a422289823b4f41fa631e);
+
+            
+        
+</script>
